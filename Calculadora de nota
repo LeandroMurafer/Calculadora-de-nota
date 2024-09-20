@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Prova {
+ public static void main (String[] args) {
+
+
+     Scanner scanner = new Scanner (System.in);
+
+
+            System.out.println("digite a nota da AC1:");
+
+            double valor1 = scanner.nextDouble();
+
+            System.out.println("digite a nota da AC2 :");
+
+            double valor2 = scanner.nextDouble();
+
+            System.out.println("digite a nota da AG :");
+
+            double valor3 = scanner.nextDouble();
+
+            System.out.println("digite a nota da AF :");
+
+            double valor4 = scanner.nextDouble();
+
+            System.out.println("digite a nota mínima :");
+
+            double minimo = scanner.nextDouble();
+            
+
+            double resultado = (valor1 * 0.15) + (valor2 * 0.30) + (valor3 * 0.10) + (valor4 * 0.45);
+
+
+
+            if (resultado >= minimo) {
+                
+                System.out.println("Aprovado com a nota " + resultado);
+
+                }
+                else{
+                    System.out.println("Reprovado com a nota " + resultado);
+                }
+            }       
+}     
